@@ -1,0 +1,298 @@
+/* Basic Styling for Container and Card */
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+  /* background-image: url('sii.jpg'); */
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+/* Header Styling */
+.header {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 24px;
+  font-family: 'Arial', sans-serif; /* Optional: Custom font */
+}
+
+/* Total Amount Styling */
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.total-section {
+  text-align: center;
+}
+
+.total-section h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.total-amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Form Group Styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.form-label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.input-icon-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px 12px 8px 48px; /* Increased left padding to make room for the logo */
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.input-icon-wrapper svg {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+/* Radio Buttons Styling */
+.radio-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.radio-label {
+  font-size: 16px;
+  color: #333;
+}
+
+.radio-buttons input {
+  margin-right: 8px;
+}
+
+/* Button Styling */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Transaction List Styling */
+.transaction-list {
+  margin-top: 32px;
+}
+
+.transaction-section {
+  margin-bottom: 24px;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.transaction-item:hover {
+  background-color: #f1f1f1;
+}
+
+.transaction-section h5.highlighted {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: underline;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #ff6b6b;
+}
+
+/* Responsive Design */
+
+/* Mobile First - Base Styles (default for mobile) */
+@media (max-width: 767px) {
+  .container {
+    padding: 16px;
+    max-width: 100%;
+  }
+
+  .header {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .total-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .total-section {
+    margin-bottom: 16px;
+  }
+
+  .form-group {
+    margin-bottom: 12px;
+  }
+
+  .form-label {
+    font-size: 14px;
+  }
+
+  .form-input {
+    padding: 8px 12px 8px 48px; /* Ensure room for icon */
+  }
+
+  .radio-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .transaction-item {
+    flex-direction: column;
+    padding: 16px;
+    align-items: center;
+  }
+
+  .transaction-section h5.highlighted {
+    font-size: 16px;
+  }
+
+  .button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* Tablet - Adjust Layout for Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 20px;
+    max-width: 80%;
+  }
+
+  .header {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .total-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-group {
+    margin-bottom: 14px;
+  }
+
+  .form-input {
+    padding: 10px 12px 10px 48px; /* Adjust padding for icon */
+  }
+
+  .radio-buttons {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .transaction-item {
+    padding: 14px;
+    margin-bottom: 12px;
+  }
+
+  .button {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+/* Desktop - Large Screens */
+@media (min-width: 1025px) {
+  .container {
+    padding: 24px;
+    max-width: 600px;
+  }
+
+  .header {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+
+  .total-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  .form-input {
+    padding: 12px 16px 12px 48px; /* Extra space for the icon */
+  }
+
+  .radio-buttons {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .transaction-item {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .button {
+    padding: 14px;
+    font-size: 18px;
+  }
+}

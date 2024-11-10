@@ -1,0 +1,116 @@
+/* Body or main container styling for the background */
+body {
+    background-color: #f2f2f2; /* Light background color */
+    background-image: url("../assets/background.svg"); /* SVG background */
+    background-repeat: no-repeat;
+    background-position: top center; /* Keeps SVG centered at the top */
+    background-size: cover; /* Scales SVG to cover the background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Centered box styling */
+form {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 1s ease-in-out; /* Animation */
+    z-index: 1; /* Ensures form appears above background */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Other styling remains unchanged... */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: #66afe9;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 12px;
+    height: 12px;
+}
+
+/* Link styling */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.link {
+    color: #007BFF; /* Link color */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    text-decoration: underline; /* Underlines the text to appear as a link */
+}
+
+.link:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+    form {
+        padding: 20px;
+    }
+}

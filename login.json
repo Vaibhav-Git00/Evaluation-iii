@@ -1,0 +1,107 @@
+{
+  "login": [
+    {
+      "id": "2",
+      "name": "alex",
+      "email": "alex456@example.com"
+    },
+    {
+      "id": "a344",
+      "username": "Saurabh",
+      "email": "saurabh2271.be22@chitkara.edu.in",
+      "password": "123456",
+      "phone": "8765432192"
+    },
+    {
+      "id": "02a1",
+      "name": "saurabh",
+      "email": "uday12@gmail.com",
+      "password": "123456",
+      "phone": "9876543273"
+    },
+    {
+      "id": "ff21",
+      "username": "sauray21s",
+      "email": "uday12@gmail.com",
+      "password": "123456",
+      "phone": "9876543272"
+    },
+    {
+      "id": "a5e4",
+      "username": "sauray21s",
+      "email": "uday12@gmail.com",
+      "password": "123456",
+      "phone": "8765432199"
+    },
+    {
+      "id": "e6e7",
+      "username": "sauray21s",
+      "email": "mug22@gmail.com",
+      "password": "12345",
+      "phone": "9876543218"
+    },
+    {
+      "id": "5265",
+      "username": "sauray21s",
+      "email": "mug22@gmail.com",
+      "password": "12345",
+      "phone": "9876543218"
+    },
+    {
+      "id": "a6da",
+      "username": "sauray21s",
+      "email": "sky123@gmail.com",
+      "password": "12345",
+      "phone": "9876543218"
+    },
+    {
+      "id": "5e82",
+      "username": "ansh",
+      "email": "uday12@gmail.com",
+      "password": "1234567",
+      "phone": "9876543210"
+    },
+    {
+      "id": "1f30",
+      "username": "ansh",
+      "email": "uday1112@gmail.com",
+      "password": "1234567",
+      "phone": "9876543210"
+    },
+    {
+      "id": "2cb4",
+      "username": "ansh",
+      "email": "uday1111@gmail.com",
+      "password": "1234567",
+      "phone": "9876543210"
+    },
+    {
+      "id": "d49a",
+      "username": "ansh",
+      "email": "mom1111@gmail.com",
+      "password": "1234567",
+      "phone": "9876543210"
+    },
+    {
+      "id": "dfce",
+      "username": "ansh",
+      "email": "mom1111@gmail.com",
+      "password": "1234567",
+      "phone": "9876543210"
+    },
+    {
+      "id": "9dc4",
+      "username": "ansh",
+      "email": "mom1111@gmail.com",
+      "password": "1234567",
+      "phone": "9876543210"
+    },
+    {
+      "id": "ec08",
+      "username": "valo",
+      "email": "valo12@gmail.com",
+      "password": "1234567",
+      "phone": "8795890266"
+    }
+  ]
+}
