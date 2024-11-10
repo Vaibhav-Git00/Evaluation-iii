@@ -5,6 +5,7 @@ import Card from './components/Card';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Login from './components/Login';
 import SignUp from './components/Sign';
+import ExpenseTracker from './components/ExpenseTracker';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/card" element={<Card/>}></Route>
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/signups" element={<SignUp/>}></Route>
+        <Route path="/expensetracker" element={<ExpenseTracker/>}></Route>
       </Routes>
       </BrowserRouter>
     </div>

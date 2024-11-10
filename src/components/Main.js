@@ -23,6 +23,7 @@ const Main = () => {
             <li className="li-all"><a className="navbar-link" href="#home">Home</a></li>
             <li className="li-all"><a className="navbar-link" href="#feature">Features</a></li>
             <li className="li-all"><a className="navbar-link" href="#feedback">Feedback</a></li>
+            <li className="li-all"><Link to="/expensetracker" className='navbar-link'>Payments</Link></li>
             <li className="li-all"><Link to="/card" className='navbar-link'>Card</Link></li>
             <button onClick={() => navigate('/login')} className="btn">
               Try Now

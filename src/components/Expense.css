@@ -1,0 +1,191 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+} */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #4a90e2; /* Changed color */
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+header .logo img {
+    margin-right: 10px; /* Space between image and text */
+    width: 170px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+}  
+
+header .user {
+    display: flex;
+    align-items: center;
+}
+
+header .user span {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+header .notification-icon {
+    font-size: 22px; /* Increased size */
+    cursor: pointer;
+}
+
+.fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Ensure FAB is on top */
+}
+
+.fab:hover {
+    background-color: #0056b3;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal ul {
+    list-style: none;
+    padding: 0;
+}
+
+.modal ul li {
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.modal ul li a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.category {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+}
+
+.category h2 {
+    font-size: 22px; /* Increased size */
+    margin-bottom: 15px;
+    color: #4a90e2; /* Changed color */
+}
+
+.category input[type="text"],
+.category input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Added transition */
+}
+
+.category input[type="text"]:focus,
+.category input[type="date"]:focus {
+    border-color: #4a90e2; /* Highlight border on focus */
+}
+
+.category button {
+    padding: 12px;
+    width: 100%;
+    background-color: #4a90e2; /* Changed color */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform */
+}
+
+.category button:hover {
+    background-color: #0056b3; /* Darker shade */
+    transform: translateY(-2px); /* Button lift effect */
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack header elements */
+        align-items: flex-start; /* Align to start */
+    }
+
+    header .user {
+        margin-top: 10px; /* Space between logo and user info */
+    }
+}
