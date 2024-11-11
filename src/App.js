@@ -6,6 +6,8 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Login from './components/Login';
 import SignUp from './components/Sign';
 import ExpenseTracker from './components/ExpenseTracker';
+// import { Calculator } from 'lucide-react';
+import Calculator from './components/Calculator';   
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/signups" element={<SignUp/>}></Route>
         <Route path="/expensetracker" element={<ExpenseTracker/>}></Route>
+        <Route path="/calculator" element={<Calculator/>}></Route>
       </Routes>
       </BrowserRouter>
     </div>
